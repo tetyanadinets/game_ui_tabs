@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.ba-wrap{
+	margin: 0 auto ;
+	max-width: 1000px;
+	min-height: 100vh;
+	background: #212534 url(../img/mainbg.jpg) no-repeat;
+	padding-top: 70px;
+
+	.ba-card{
+		background-color: #212534;
+		box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+		max-width: 600px;
+		min-height: 541px;
+		margin: 0 auto;
+
+		&__header{
+			min-height: 115px;
+			background-color: #2b3040;
+
+			.tabs__caption{
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+				padding: 0 40px;
+
+
+				.ba-card__header-item{
+					text-align: center;
+					padding-left: 0;
+
+
+
+					a{
+						max-width: 200px;
+						display: inline-block;
+						text-transform: uppercase;
+						text-decoration: none;
+						font-family: Lato;
+						font-size: 16px;
+						color: #b7bacd;
+						fill: #b7bacd;
+						padding: 33px 0;
+						border-bottom: 2px solid #2b3040;
+
+						p{
+							margin: 0;
+							padding-top: 13px;
+
+						}
+					}
+				}
+
+				.active a{
+						fill: #fff;
+						color: #FFF;
+						border-bottom: 2px solid #fff;
+				}
+
+			}
+		}
+
+		.ba-card__container{
+			max-width: 513px;
+			min-height: 309px;
+			margin: 43px auto;
+			position: relative;
+
+			.ba-rating{
+				list-style: none;
+				padding-left: 10px;
+
+
+				li{
+					display: inline-block;
+					padding-right: 9px;
+				}
+			}
+
+			h3{
+				font-family: Lato;
+				color: #ffffff;
+				font-size: 32px;
+				font-weight: 400;
+				margin: 10px 0;
+
+			}
+			.ba-release{
+				font-family: Lato;
+				color: #fdfdfd;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			.ba-description{
+				font-family: Lato;
+				color: #b7bacd;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				padding-top: 32px;
+
+			}
+
+			.ba-progress-bar{
+
+				position: absolute;
+				top: 5%;
+				right: 5%;
+				border-radius: 50%;
+				border: 1px solid rgb(170, 173, 188);
+				p{
+					font-family: Lato;
+					color: #aaadbc;
+					font-size: 20px;
+					font-weight: 400;
+					margin: 0;
+					padding: 15px;
+
+				}
+
+			}
+
+
+			.ba-prise{
+				display: inline-block;
+				padding-top: 50px;
+				&__discount{
+						font-family: Lato;
+						color: #fedd3f;
+						font-size: 12px;
+						font-weight: 700;
+						text-transform: uppercase;
+						padding-left: 5px;
+					}
+				&__game{
+					font-family: Lato;
+					color:#ffffff;
+					font-size: 32px;
+					font-weight: 400;
+					margin: 0;
+					&:before{
+						content: "$";
+					}
+
+				}
+			}
+			form{
+				display: inline-block;
+			}
+
+			button{
+				font-family: Lato;
+				color: #ffffff;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 20px;
+				text-align: center;
+				border-radius: 2px;
+				background-color: #13e28d;
+				outline: none;
+				border: none;
+				padding: 15px 23px;
+				margin-left: 48px;
+				vertical-align: bottom;
+				cursor: pointer;
+				&:hover{
+					background-color: rgb(0, 224, 189);
+					color: rgb(255, 221, 63);
+				}
+
+			}
+
+		}
+
+		.ba-card__container--raiting{
+
+			p{
+				text-align: center;
+				font-family: Lato;
+				color: rgb(0, 247, 141);
+				font-size: 150px;
+				font-weight: 700;
+				margin: 0;
+
+			}
+		}
+		.ba-card__container--buy{
+			text-align: center;
+			p{
+				text-align: center;
+				font-family: Lato;
+				color: rgb(0, 247, 141);
+				font-size: 100px;
+				font-weight: 700;
+				margin: 0;
+				padding-bottom: 50px;
+			}
+			a{
+				text-align: center;
+				text-decoration: none;
+				color: rgb(255, 221, 63);
+				font-size: 60px;
+				border: 1px solid rgb(19, 226, 141);
+				-webkit-border-radius: 3px;
+				        border-radius: 3px;
+				padding: 10px;
+				text-transform: uppercase;
+				&:hover{
+					background-color: rgb(183, 186, 205);
+					opacity: .8;
+
+				}
+
+			}
+		}
+
+	}
+}
+
+.tabs__content {
+  display: none;
+}
+.tabs__content.active {
+  display: block;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
